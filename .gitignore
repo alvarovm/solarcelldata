@@ -1,0 +1,29 @@
+cache*
+.results_dir
+.scratch_dir
+
+# Workflow ignores
+*parsl.log
+runinfo
+
+# Docs 
+.cache/
+docs/reference/*
+*doctrees*
+
+# Python ignores
+*.pyc
+*.egg*
+__pycache__
+build
+dist
+timer.dat
+.mypy_cache*
+.ipynb_checkpoints
+ipython_config.py
+
+# OS ignores
+.DS_Store
+
+# Editors ignores
+.vscode*
