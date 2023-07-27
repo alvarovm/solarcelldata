@@ -5,14 +5,11 @@ from rdkit.DataStructs import ConvertToNumpyArray
 import re
 
 def canon_smiles(smi):
-    """
-    Function to cannonize SMILES strings
-    """
     try:
         m = smi2mol(smi)
     except:
         m = False
-        #print('hola cannon'+smi)
+        print('hola cannon'+smi)
         
     if m is False:
         return False
@@ -26,20 +23,16 @@ def canon_smiles(smi):
     
 
 def CleanSMI(smi):
-    """
-    Function to cleanese SMILES strings
-    """
-    try: 
-        clean = re.sub(r'[<>%\\/?\|]+', '', smi)
-    except:
-        #print('holaclean ' +smi )
-        clean = False
-    return clean
+        try: 
+            clean=re.sub(r'[<>%\\/?\|]+', '', smi)
+        except:
+            #print('holaclean ' +smi )
+            clean =False
+        return clean
 
 def HardValidSMI(smi):
     """
-    A rule based function to validate a given smile string.
-    Input: SMILE character string.
+    A rule based function to validate a given smile string. 
     Return type: Boolean
     True: If a match is found. 
     False: Charges, Ions and No Conjugated regions found.
@@ -75,9 +68,6 @@ def HardValidSMI(smi):
 
 
 def applyMorganFP(m,**kwargs):
-    """
-    Function to apply Morgan Fingerprints to a Molecule (rdkit) object
-    """
     fptype='bit'
     
     if 'fptype' in kwargs:
