@@ -2,3 +2,8 @@
 
 Please visit the wiki documentation for instructions, here [https://github.com/alvarovm/solarcelldata/wiki](https://github.com/alvarovm/solarcelldata/wiki)
 
+All rights reserved.
+Copyright Argonne National Laboratory UChicago LLC.
+Alvaro Vazquez Mayagoitia
+
+
