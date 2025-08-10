@@ -1,3 +1,4 @@
+name: solarcell2025
 channels:
   - defaults
   - conda-forge
