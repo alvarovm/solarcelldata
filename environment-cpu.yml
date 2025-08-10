@@ -1,0 +1,17 @@
+name: solarcell
+channels:
+- conda-forge
+- anaconda
+- defaults
+- intel
+dependencies:
+- pandas
+- ase
+- rdkit
+- umap-learn
+- hdbscan
+- tqdm
+- seaborn
+- cairosvg
+- python==3.8
+- chemdataextractor

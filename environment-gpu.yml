@@ -1,0 +1,19 @@
+name: solarcellgpu
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+- pip
+- python==3.9
+- ipykernel
+- scikit-learn
+- cudatoolkit=11.8.0
+- pip:
+  - nvidia-cudnn-cu11==8.6.0.163
+  - gpflow
+  - tqdm
+  - rdkit
+  - seaborn
+  - pandas
+  - hdbscan
+  - cairosvg
